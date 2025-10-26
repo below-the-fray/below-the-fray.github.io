@@ -1,39 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Below the Fray</title>
-  <meta name="description" content="An essay by Rob Tompkins presented in a LaTeX-style single-page layout with numbered sections, equations, figures, and references." />
-  <meta property="og:title" content="Below the Fray" />
-  <meta property="og:description" content="An essay by Rob Tompkins in a LaTeX-like web layout." />
-  <meta property="og:type" content="article" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="robtompkins.com" />
-  <!-- Fonts (STIX Two Text pairs nicely with LaTeX; KaTeX covers math glyphs) -->
-  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Site styles -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- KaTeX for math rendering (CSS + JS + auto-render) -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Below the Fray</title>
+    <meta name="description" content="An essay by Rob Tompkins presented in a LaTeX-style single-page layout with a mobile-friendly table of contents." />
+    <meta property="og:title" content="Below the Fray" />
+    <meta property="og:description" content="An essay presented in a LaTeX-like web layout with math and a responsive sidebar." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- KaTeX for math rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/below-the-fray/styles.css">
 </head>
 <body>
-<!-- Mobile TOC toggle -->
-<button id="toc-toggle"
-        class="toc-toggle"
-        aria-controls="toc"
-        aria-expanded="false"
-        aria-label="Open table of contents">
-    ☰ Contents
-</button>
-
-<!-- Optional backdrop for when the drawer is open -->
+<!-- Mobile toggle + backdrop -->
+<button id="toc-toggle" class="toc-toggle" aria-controls="toc" aria-expanded="false">☰ Contents</button>
 <div class="toc-backdrop" hidden></div>
-<div class="layout">
 
+<div class="layout">
+    <!-- LEFT SIDEBAR (ToC) -->
     <!-- LEFT SIDEBAR -->
     <nav class="sidebar">
         <h2 class="no-number"><a href="#top">Contents</a></h2>
@@ -49,159 +40,112 @@
 
     <!-- MAIN PAPER CONTENT -->
     <main class="page">
-    <header id="top" class="title-block">
-      <h1>Below the Fray</h1>
-      <div class="authors">Rob Tompkins</div>
-      <div class="affil">Commonwealth Labs</div>
-      <div class="date">October 25, 2025</div>
-    </header>
+        <header id="top" class="title-block">
+            <h1>Below the Fray</h1>
+            <div class="authors">Rob Tompkins</div>
+            <div class="affil">Commonwealth Labs</div>
+            <div class="date">October 25, 2025</div>
+        </header>
 
-    <section id="abstract" class="abstract">
-      Due to population growth and economic pressures, the political class has become increasingly disconnected from
-      the everyday concerns of citizens. This essay explores strategies for bridging that gap through community
-      engagement and policy reform. Consider a rope with a tear midway. The ruling class rests above the tear in the
-      rope oblivious, insulated, and indifferent to the struggles of those below. To mend this tear, we must first
-      understand the forces pulling.
-    </section>
+        <section id="abstract" class="abstract">
+            Due to population growth and economic pressures, the political class has become increasingly disconnected from
+            the everyday concerns of citizens. This essay explores strategies for bridging that gap through community
+            engagement and policy reform. Consider a rope with a tear midway. The ruling class rests above the tear in the
+            rope oblivious, insulated, and indifferent to the struggles of those below. To mend this tear, we must first
+            understand the forces pulling.
+        </section>
 
-    <main>
-      <h2 id="introduction">Introduction</h2>
-      <p class="noindent">
-          Consider the every-day American. What are the needs that one has to live and perform in this country we call
-          home.
-          <ol>
+        <main>
+            <h2 id="introduction">Introduction</h2>
+            <p class="noindent">
+                Consider the every-day American. What are the needs that one has to live and perform in this country we call
+                home.
+            <ol>
                 <li>Shelter.</li>
                 <li>Water.</li>
                 <li>Food.</li>
                 <li>Education.</li>
                 <li>Transportation.</li>
                 <li>Medical Care.</li>
-          </ol>
-        These are the core tenets of our society, removal of any one of these causes a cascade failure in the system. The one
-        that clearly has been left out of the list is "Work" or "Employment". This is because work is not a need, but a
-        means to an end. Work is how we acquire the resources to meet our needs.
-      </p>
-      <p>
-        The problem that we currently face though is that for the majority of Americans, work is not sufficient to meet
-        these needs. The cost of living has outpaced wage growth for decades.
-      </p>
+            </ol>
+            These are the core tenets of our society, removal of any one of these causes a cascade failure in the system. The one
+            that clearly has been left out of the list is "Work" or "Employment". This is because work is not a need, but a
+            means to an end. Work is how we acquire the resources to meet our needs.
+            </p>
+            <p>
+                The problem that we currently face though is that for the majority of Americans, work is not sufficient to meet
+                these needs. The cost of living has outpaced wage growth for decades.
+            </p>
 
-      <figure>
-        <img src="./assets/img/incomeInequality.png" alt="Income Inequality Chart">
-        <figcaption>A placeholder figure with an auto-numbered caption.</figcaption>
-      </figure>
+            <figure>
+                <img src="./assets/img/incomeInequality.png" alt="Income Inequality Chart">
+                <figcaption>A placeholder figure with an auto-numbered caption.</figcaption>
+            </figure>
 
-      <p>
-        Note that this directly coincides with the period where it has become increasinigly popular for the political class to
-        lower taxes on the wealthy and corporations under the guise of "trickle-down economics". Those policies simply
-        consolidate wealth at the top, and leave the rest of us to fend for ourselves. We Americans are left to do on our
-        own what the governments of other developed nations provide as a matter of course. Thus, we spend more of our time
-        simply trying to keep our heads, and less time on civic duties. Those duties are left to the wealthy, who have the
-        time and resources to devote to them. This creates a feedback loop where the political class becomes increasingly
-        disconnected from the needs of the populace.
-      </p>
+            <p>
+                Note that this directly coincides with the period where it has become increasinigly popular for the political class to
+                lower taxes on the wealthy and corporations under the guise of "trickle-down economics". Those policies simply
+                consolidate wealth at the top, and leave the rest of us to fend for ourselves. We Americans are left to do on our
+                own what the governments of other developed nations provide as a matter of course. Thus, we spend more of our time
+                simply trying to keep our heads, and less time on civic duties. Those duties are left to the wealthy, who have the
+                time and resources to devote to them. This creates a feedback loop where the political class becomes increasingly
+                disconnected from the needs of the populace.
+            </p>
 
 
-      <h2 id="income-inequality">Income Inequality</h2>
-      <p>
-        Why we ask does income inequality matter? And how do taxes factor into this?
-      </p>
+            <h2 id="income-inequality">Income Inequality</h2>
+            <p>
+                Why we ask does income inequality matter? And how do taxes factor into this?
+            </p>
 
-      <h2>Background</h2>
-      <p>Use <code>&lt;h2&gt;</code> for sections and <code>&lt;h3&gt;</code> for subsections; counters add the numbers.</p>
+        <h2 id="discussion">Discussion</h2>
+        <p>Typography uses a classic serif face with first‑line indentation. For a closer TeX feel, you can swap fonts, but KaTeX ensures math looks correct.</p>
 
-      <h3>Related Work</h3>
-      <p>References are listed at the end like a LaTeX <em>thebibliography</em><sup class="fn">1</sup>.</p>
+        <hr />
+        <section class="refs" id="references">
+            <h3>References</h3>
+            <ol>
+                <li>[1] Lamport, L. <em>LaTeX: A Document Preparation System</em>. Addison‑Wesley, 2nd ed., 1994.</li>
+                <li>[2] Knuth, D. E. <em>The TeXbook</em>. Addison‑Wesley, 1984.</li>
+            </ol>
+        </section>
 
-      <h2>Results</h2>
-      <p>Figures and tables are styled with captions and auto-numbering.</p>
-
-      <figure>
-        <img src="/assets/img/placeholder-900x400.png" alt="Placeholder figure">
-        <figcaption>A placeholder figure with an auto-numbered caption.</figcaption>
-      </figure>
-
-      <div class="table">
-        <div class="caption">Experimental Results</div>
-        <table>
-          <thead>
-            <tr><th>Method</th><th>Score</th><th>Notes</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Baseline</td><td>71.2</td><td>Reference implementation</td></tr>
-            <tr><td>Our approach</td><td>84.7</td><td>Improved regularization</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2>Discussion</h2>
-      <p>Typography uses a classic serif face with first-line indentation. For a closer TeX feel, you can swap fonts, but KaTeX ensures math looks correct.</p>
-
-      <hr />
-      <section class="refs">
-        <h3>References</h3>
-        <ol>
-          <li>[1] Lamport, L. <em>LaTeX: A Document Preparation System</em>. Addison‑Wesley, 2nd ed., 1994.</li>
-          <li>[2] Knuth, D. E. <em>The TeXbook</em>. Addison‑Wesley, 1984.</li>
-        </ol>
-      </section>
-
-      <section class="footnotes">
-        <ol>
-          <li id="fn1">Sample footnote illustrating footnote styling and semantics.</li>
-        </ol>
-      </section>
+        <section class="footnotes">
+            <ol>
+                <li id="fn1">Sample footnote illustrating footnote styling and semantics.</li>
+            </ol>
+        </section>
     </main>
-  </div>
 </div>
 
-  <script>
-      window.addEventListener("DOMContentLoaded",function(){
-          if(window.renderMathInElement){
-              renderMathInElement(document.body,{
-                  delimiters:[
-                      {left:"$$",right:"$$",display:true},
-                      {left:"\\(",right:"\\)",display:false},
-                      {left:"\\[",right:"\\]",display:true}
-                  ]
-              });
-          }
-      });
-  </script>
-
-<!-- Drawer toggle logic -->
+<!-- Auto-render KaTeX and enhance TOC (toggle + active section) -->
 <script>
+    // KaTeX auto-render
+    window.addEventListener("DOMContentLoaded", function () {
+        if (window.renderMathInElement) {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        }
+    });
+</script>
+<script>
+    // Minimal drawer logic for mobile
     (function () {
         const btn = document.getElementById('toc-toggle');
         const toc = document.getElementById('toc');
         const backdrop = document.querySelector('.toc-backdrop');
-
-        function openTOC() {
-            toc.classList.add('sidebar--open');
-            document.body.classList.add('toc-open');
-            btn.setAttribute('aria-expanded', 'true');
-            backdrop.hidden = false;
-        }
-        function closeTOC() {
-            toc.classList.remove('sidebar--open');
-            document.body.classList.remove('toc-open');
-            btn.setAttribute('aria-expanded', 'false');
-            backdrop.hidden = true;
-        }
-        function toggleTOC() {
-            toc.classList.contains('sidebar--open') ? closeTOC() : openTOC();
-        }
-
-        btn.addEventListener('click', toggleTOC);
-        backdrop.addEventListener('click', closeTOC);
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeTOC(); });
-
-        // Close drawer after tapping a TOC link (nice on mobile)
-        toc.addEventListener('click', (e) => {
-            if (e.target.matches('a')) closeTOC();
-        });
+        function openT(){ toc.classList.add('sidebar--open'); document.body.classList.add('toc-open'); btn.setAttribute('aria-expanded','true'); backdrop.hidden=false; }
+        function closeT(){ toc.classList.remove('sidebar--open'); document.body.classList.remove('toc-open'); btn.setAttribute('aria-expanded','false'); backdrop.hidden=true; }
+        btn.addEventListener('click', () => toc.classList.contains('sidebar--open') ? closeT() : openT());
+        backdrop.addEventListener('click', closeT);
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeT(); });
+        document.getElementById('toc').addEventListener('click', e => { if (e.target.matches('a')) closeT(); });
     }());
 </script>
-
 </body>
 </html>
