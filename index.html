@@ -25,78 +25,69 @@
 
 <div class="layout">
     <!-- LEFT SIDEBAR (ToC) -->
-    <!-- LEFT SIDEBAR -->
-    <nav class="sidebar">
-        <h2 class="no-number"><a href="#top">Contents</a></h2>
-        <ul>
-            <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#introduction">1  Introduction</a></li>
-            <li><a href="#income-inequality">2  Income Inequality</a></li>
-            <li><a href="#results">3  Results</a></li>
-            <li><a href="#discussion">4  Discussion</a></li>
-            <li><a href="#references">References</a></li>
-        </ul>
+    <nav class="sidebar" id="toc" aria-label="Table of contents">
+        <div class="sidebar-inner">
+            <h2 class="no-number">Contents</h2>
+            <ul>
+                <li><a href="#introduction">1&nbsp;&nbsp;Introduction</a></li>
+                <li><a href="#background">2&nbsp;&nbsp;Background</a></li>
+                <li><a href="#related-work">2.1&nbsp;&nbsp;Related Work</a></li>
+                <li><a href="#results">3&nbsp;&nbsp;Results</a></li>
+                <li><a href="#discussion">4&nbsp;&nbsp;Discussion</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
     </nav>
+
 
     <!-- MAIN PAPER CONTENT -->
     <main class="page">
-        <header id="top" class="title-block">
-            <h1>Below the Fray</h1>
-            <div class="authors">Rob Tompkins</div>
-            <div class="affil">Commonwealth Labs</div>
+        <header class="title-block">
+            <h1>LaTeX GitHub Page Site Template</h1>
+            <div class="authors">Rob Tompkins<sup>1</sup></div>
+            <div class="affil"><sup>1</sup>Commonwealth Labs</div>
             <div class="date">October 25, 2025</div>
         </header>
 
-        <section id="abstract" class="abstract">
-            Due to population growth and economic pressures, the political class has become increasingly disconnected from
-            the everyday concerns of citizens. This essay explores strategies for bridging that gap through community
-            engagement and policy reform. Consider a rope with a tear midway. The ruling class rests above the tear in the
-            rope oblivious, insulated, and indifferent to the struggles of those below. To mend this tear, we must first
-            understand the forces pulling.
+        <section class="abstract">
+            This is a short abstract that summarizes the piece in a few sentences. It opens with a bold italic “Abstract—” lead‑in and a subtle rule to mimic LaTeX class files.
         </section>
 
-        <main>
-            <h2 id="introduction">Introduction</h2>
-            <p class="noindent">
-                Consider the every-day American. What are the needs that one has to live and perform in this country we call
-                home.
-            <ol>
-                <li>Shelter.</li>
-                <li>Water.</li>
-                <li>Food.</li>
-                <li>Education.</li>
-                <li>Transportation.</li>
-                <li>Medical Care.</li>
-            </ol>
-            These are the core tenets of our society, removal of any one of these causes a cascade failure in the system. The one
-            that clearly has been left out of the list is "Work" or "Employment". This is because work is not a need, but a
-            means to an end. Work is how we acquire the resources to meet our needs.
-            </p>
-            <p>
-                The problem that we currently face though is that for the majority of Americans, work is not sufficient to meet
-                these needs. The cost of living has outpaced wage growth for decades.
-            </p>
+        <h2 id="introduction">Introduction</h2>
+        <p class="noindent">This page is built as plain HTML/CSS with a LaTeX‑inspired look: paragraph indentation, numbered sections and subsections, equation numbers, and auto‑numbered figures/tables. It is lightweight and GitHub Pages–ready.</p>
+        <p>Inline math like \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\) and display math below will be rendered by KaTeX automatically.</p>
 
-            <figure>
-                <img src="./assets/img/incomeInequality.png" alt="Income Inequality Chart">
-                <figcaption>A placeholder figure with an auto-numbered caption.</figcaption>
-            </figure>
+        <div class="equation">
+            <div class="content">\[ e^{i\pi} + 1 = 0 \]</div>
+            <div class="number"></div>
+        </div>
 
-            <p>
-                Note that this directly coincides with the period where it has become increasinigly popular for the political class to
-                lower taxes on the wealthy and corporations under the guise of "trickle-down economics". Those policies simply
-                consolidate wealth at the top, and leave the rest of us to fend for ourselves. We Americans are left to do on our
-                own what the governments of other developed nations provide as a matter of course. Thus, we spend more of our time
-                simply trying to keep our heads, and less time on civic duties. Those duties are left to the wealthy, who have the
-                time and resources to devote to them. This creates a feedback loop where the political class becomes increasingly
-                disconnected from the needs of the populace.
-            </p>
+        <h2 id="background">Background</h2>
+        <p>Use <code>&lt;h2&gt;</code> for sections and <code>&lt;h3&gt;</code> for subsections; counters add the numbers.</p>
 
+        <h3 id="related-work">Related Work</h3>
+        <p>References are listed at the end like a LaTeX <em>thebibliography</em><sup class="fn">1</sup>.</p>
 
-            <h2 id="income-inequality">Income Inequality</h2>
-            <p>
-                Why we ask does income inequality matter? And how do taxes factor into this?
-            </p>
+        <h2 id="results">Results</h2>
+        <p>Figures and tables are styled with captions and auto‑numbering.</p>
+
+        <figure>
+            <img src="assets/img/placeholder-900x400.png" alt="Placeholder figure">
+            <figcaption>A placeholder figure with an auto‑numbered caption.</figcaption>
+        </figure>
+
+        <div class="table">
+            <div class="caption">Experimental Results</div>
+            <table>
+                <thead>
+                <tr><th>Method</th><th>Score</th><th>Notes</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Baseline</td><td>71.2</td><td>Reference implementation</td></tr>
+                <tr><td>Our approach</td><td>84.7</td><td>Improved regularization</td></tr>
+                </tbody>
+            </table>
+        </div>
 
         <h2 id="discussion">Discussion</h2>
         <p>Typography uses a classic serif face with first‑line indentation. For a closer TeX feel, you can swap fonts, but KaTeX ensures math looks correct.</p>
