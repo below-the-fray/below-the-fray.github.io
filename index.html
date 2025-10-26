@@ -21,15 +21,30 @@
     <link rel="stylesheet" href="/below-the-fray/styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="title-block">
+<div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <nav class="sidebar">
+        <h2 class="no-number"><a href="#top">Contents</a></h2>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">1  Introduction</a></li>
+            <li><a href="#related-work">2.1  Related Work</a></li>
+            <li><a href="#results">3  Results</a></li>
+            <li><a href="#discussion">4  Discussion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN PAPER CONTENT -->
+    <main class="page">
+    <header id="top" class="title-block">
       <h1>Below the Fray</h1>
       <div class="authors">Rob Tompkins</div>
       <div class="affil">Commonwealth Labs</div>
       <div class="date">October 25, 2025</div>
     </header>
 
-    <section class="abstract">
+    <section id="abstract" class="abstract">
       Due to population growth and economic pressures, the political class has become increasingly disconnected from
       the everyday concerns of citizens. This essay explores strategies for bridging that gap through community
       engagement and policy reform. Consider a rope with a tear midway. The ruling class rests above the tear in the
@@ -38,7 +53,7 @@
     </section>
 
     <main>
-      <h2>Introduction</h2>
+      <h2 id="introduction">Introduction</h2>
       <p class="noindent">
           Consider the every-day American. What are the needs that one has to live and perform in this country we call
           home.
@@ -123,7 +138,7 @@
       </section>
     </main>
   </div>
-
+</div>
 
   <script>
       window.addEventListener("DOMContentLoaded",function(){
@@ -138,5 +153,6 @@
           }
       });
   </script>
+
 </body>
 </html>
